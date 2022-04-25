@@ -23,10 +23,11 @@
 
         document.head.appendChild(evolvScript);
         
-        window.evolv.client.emit('test-page-load');
+        window.evolv.client.emit('traffic-test.load');
     </script>
 </head>
 <body>
   <h1>Traffic Test</h1>
+    <button onClick="window.evolv.client.emit('traffic-test.convert');">Convert</button>
 </body>
 </html>
