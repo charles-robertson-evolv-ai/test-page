@@ -13,6 +13,8 @@
         //evolvScript.setAttribute('data-evolv-uid', '<uid>');
 
         document.head.appendChild(evolvScript);
+        
+        window.evolv.client.emit('test-page-load');
     </script>
 </head>
 <body>
